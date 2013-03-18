@@ -69,9 +69,6 @@ if( $ARGV[0] eq "-w" || $ARGV[1] eq "-w" || $ARGV[2] eq "-w" ) {
     if( $ARGV[0] eq "-s" || $ARGV[1] eq "-s" || $ARGV[2] eq "-s" ){
         $padding = "    ";
     }
-    else {
-        
-    }
 
     # display in reverse order
     if( $ARGV[0] eq "-r" || $ARGV[1] eq "-r" || $ARGV[2] eq "-r" ){
@@ -87,7 +84,6 @@ if( $ARGV[0] eq "-w" || $ARGV[1] eq "-w" || $ARGV[2] eq "-w" ) {
 
                 $seed = $seed+1;
             }
-
             print "\n";
         }
     }
@@ -109,13 +105,11 @@ if( $ARGV[0] eq "-w" || $ARGV[1] eq "-w" || $ARGV[2] eq "-w" ) {
 
                 $seed = $seed+1;
             }
-
             print "\n";
         }
     }
     print "\n";
     print "\n";
-
 }
 else {
     print "[38;5;16m 16:  00/00/00\n";
@@ -361,5 +355,5 @@ else {
     print "\n";
     print "\n";
 }
-print "0m";
+print "[0m";
 exit;
